@@ -2,15 +2,123 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: {{projectTitle}}</title>
+    <title>Барбершоп "Бородинский"</title>
   </head>
   <body>
+    <header class="main-header">
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="nav-link" href="#">О нас</a>
+          </li>
+          <li class="navigation-item">
+            <a class="nav-link" href="#">Каталог</a>
+          </li>
+          <li class="navigation-item">
+            <a class="nav-link" href="#">Частые вопросы</a>
+          </li>
+        </ul>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="nav-link" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="nav-link" href="#">
+              <span class="visually-hidden">Корзина</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="nav-link" href="#">Вход</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main class="main-index">
+      <h1 class="visually-hidden">Барбершоп 'Бородинский'</h1>
+      <img class="logo" src="#" alt="Логотип барбершопа 'Бородинский'">
+      
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <h3 class="advantages-title">Быстро</h3>
+            <p class="advantages-description">Мы делаем свою работу быстро! Два часа пролетят незаметно, 
+              и вы — счастливый обладатель стильной стрижки-минутки!</p>
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-title">Круто</h3>
+            <p class="advantages-description">Забудьте, как вы стриглись раньше. 
+              Мы сделаем из вас звезду футбола или кино! 
+              Во всяком случае внешне.</p>
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-title">Дорого</h3>
+            <p class="advantages-description">Мы делаем свою работу быстро! Два часа пролетят незаметно, 
+              и вы — счастливый обладатель стильной стрижки-минутки!</p>
+          </li>
+        </ul>
+      </section>
+      
+      <section class="services">
+        <h2>Популярные услуги</h2>
+        <ul class="services-list">
+          <li class="services-item">
+            <h3 class="services-name">Стрижка машинкой</h3>
+            <b class="services-price">800  ₽</b>
+          </li>
+          <li class="services-item">
+            <h3 class="services-name">Стрижка усов</h3>
+            <b class="services-price">1200  ₽</b>
+          </li>
+          <li class="services-item">
+            <h3 class="services-name">Груминг</h3>
+            <b class="services-price">400  ₽</b>
+          </li>
+          <li class="services-item">
+            <h3 class="services-name">Комплексная стрижка</h3>
+            <b class="services-price">2300  ₽</b>
+          </li>
+        </ul>
+        <a class="button button-all" href="#">Посмотреть все</a>
+      </section>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе
-      «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS.
-        Профессиональная вёрстка сайтов</a>».</p>
-    <div>Пробный абзац</div>
-    <div>Пробный абзац 2</div>
+      <section class="gallery">
+        <h3 class="gallery-title">Фотогалерея</h3>
+        <img class="slider-photo" src="#" alt="Примеры работ">
+        <button class="slider-button slider-prev" type="button">
+          <span class="visually-hidden">Предыдущее фото</span>
+        </button>
+        <button class="slider-button slider-next" type="button">
+          <span class="visually-hidden">Следующее фото</span>
+        </button>
 
+        <ol class="slider-division">
+          <li class="slider-division-item">
+            <button class="slider-division-button 
+            slider-division-button-current" type="button">
+              <span class="visually-hidden">1 фото</span>
+            </button>
+          </li>
+          <li class="slider-division-item">
+            <button class="slider-division-button" type="button">
+              <span class="visually-hidden">2 фото</span>
+            </button>
+          </li>
+          <li class="slider-division-item">
+            <button class="slider-division-button" type="button">
+              <span class="visually-hidden">3 фото</span>
+            </button>
+          </li>
+          <li class="slider-division-item">
+            <button class="slider-division-button" type="button">
+              <span class="visually-hidden">4 фото</span>
+            </button>
+          </li>
+        </ol>
+      </section>
+    </main>
   </body>
 </html>
