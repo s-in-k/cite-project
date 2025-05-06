@@ -120,9 +120,102 @@
               </li>
             </ul>
           </fieldset>
+
+          <button class="button" type="submit">Показать</button>
         </form>
         
-        <button class="button" type="submit">Показать</button>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="popular">Сначала популярные</option>
+          <option value="cheap">Сначала дешевые</option>
+          <option value="expensive" selected>Сначала дорогие</option>
+        </select>
+
+        <a class="button button-light" href="#">
+          <span class="visually-hidden">Показать список</span>
+        </a>
+        <a class="button" href="#">
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
+        
+        <ul class="product-card-list">
+          <li class="product-card-list">
+            <a class="product-card-link">
+              <img class="product-card-image" src="#" alt="Шампунь для мужчин Brews Daily">
+              <h3 class="product-card-title">Шампунь для мужчин Brews Daily</h3>
+            </a>
+            <b class="product-card-price">744 ₽</b>
+            <a class="product-card-button button" href="#">Купить</a>
+          </li>
+          <li class="product-card-list">
+            <a class="product-card-link">
+              <img class="product-card-image" src="#" alt="Шампунь для мужчин Syoss">
+              <h3 class="product-card-title">Syoss шампунь Men Power & Strength</h3>
+            </a>
+            <b class="product-card-price">160 ₽</b>
+            <a class="product-card-button button" href="#">Купить</a>
+          </li>
+          <li class="product-card-list">
+            <a class="product-card-link">
+              <img class="product-card-image" src="#" alt="Шампунь для мужчин Schauma">
+              <h3 class="product-card-title">Schauma шампунь для мужчин «Сила и объём с хмелем»</h3>
+            </a>
+            <b class="product-card-price">94 ₽</b>
+            <a class="product-card-button button" href="#">Купить</a>
+          </li>
+          <li class="product-card-list">
+            <a class="product-card-link">
+              <img class="product-card-image" src="#" alt="Шампунь для мужчин Nivea Men">
+              <h3 class="product-card-title">Nivea Men шампунь-уход  «Экстремальная свежесть с ментолом»</h3>
+            </a>
+            <b class="product-card-price">173 ₽</b>
+            <a class="product-card-button button" href="#">Купить</a>
+          </li>
+          <li class="product-card-list">
+            <a class="product-card-link">
+              <img class="product-card-image" src="#" alt="Шампунь для мужчин Amplifier Thickening">
+              <h3 class="product-card-title">Шампунь Amplifier Thickening</h3>
+            </a>
+            <b class="product-card-price">441 ₽</b>
+            <a class="product-card-button button" href="#">Купить</a>
+          </li>
+          <li class="product-card-list">
+            <a class="product-card-link">
+              <img class="product-card-image" src="#" alt="Шампунь для мужчин American Crew">
+              <h3 class="product-card-title">American Crew шампунь Anti-Dandruff</h3>
+            </a>
+            <b class="product-card-price">904 ₽</b>
+            <a class="product-card-button button" href="#">Купить</a>
+          </li>
+        </ul>
+        
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-prev pagination-disabled" href="#">
+              <span class="visually-hidden">Предыдущая страница</span>
+            </a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current" href="#">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">5</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-next" href="#">
+              <span class="visually-hidden">Следующая страница</span>
+            </a>
+          </li>
+        </ul>
+        <button class="button pagination-show-more" type="button">Показать ещё</button>
       </section>
 
     </main>
