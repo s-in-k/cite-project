@@ -34,7 +34,8 @@ body {
     color:#fbf7f4;
 }
 
-.button-feedback {
+.button-feedback,
+.button-light{
     background-color: #fff;
     color: black;
 }
@@ -103,8 +104,8 @@ body {
 
 .services-list {
     font-size: 20px;
-    line-height: 21px;
 }
+
 
 .services-price {
     color: #af7842;
@@ -212,4 +213,83 @@ body {
     color: white;
     text-transform: uppercase;
     text-decoration: underline;
+}
+
+.main-inner {
+    background-color: #fbf7f4;
+    color:#242424;
+    background-image: url(../images/sprite.png);
+}
+
+.inner-header-title {
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 35px;
+}
+
+.breadcrumbs-link {
+    color: #242424;
+}
+
+.catalog-products {
+    font-weight: bold;
+}
+
+.catalog-filter-title {
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.sorting-container {
+    background-color: #fff;
+    color:#242424;
+    width: 700px;
+    height: 76px;
+}
+
+.select-control {
+    border: 2px solid #242424;
+    width: 260px;
+    height: 44px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #fff;
+    color:#242424;
+}
+
+.product-card-item {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    background-color: #fff;
+}
+
+.product-card-price {
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color:#814b18;
+}
+
+.pagination-link {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    background-color: #000;
+    color:#fff;
+}
+
+.pagination-current {
+    background-color: #fff;
+    color: #000;
+}
+
+.pagination-disabled {
+    background-color: #595959;
 }
