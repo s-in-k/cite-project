@@ -9,41 +9,42 @@
 
 <body>
   <header class="main-header">
-    <nav class="nav">
+    <nav class="navigation">
       <a class="nav-link" href="index.html">
-        <img class="logo" src="images/logo-short-light.svg" alt="Логотип Барбершоп «Бородинский»" width="140"
+        <img class="inner-logo" src="images/logo-short-light.svg" alt="Логотип Барбершоп «Бородинский»" width="140"
           height="18">
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
+      <ul class="navigation-list">
+        <li class="navigation-item">
           <a class="nav-link" href="#">О нас</a>
         </li>
-        <li class="nav-item">
+        <li class="navigation-item">
           <a class="nav-link nav-list-current" href="catalog.html">Каталог</a>
         </li>
-        <li class="nav-item">
+        <li class="navigation-item">
           <a class="nav-link" href="#">Частые вопросы</a>
         </li>
       </ul>
-      <ul class="nav-list nav-user">
-        <li class="nav-item">
+      <ul class="navigation-list navigation-user">
+        <li class="navigation-item">
           <a class="nav-link" href="#">
             <span class="visually-hidden">Поиск</span>
           </a>
         </li>
-        <li class="nav-item">
+        <li class="navigation-item">
           <a class="nav-link" href="#">
             <span class="visually-hidden">Корзина</span>
           </a>
         </li>
-        <li class="nav-item">
+        <li class="navigation-item">
           <a class="nav-link" href="#">Профиль</a>
         </li>
       </ul>
     </nav>
   </header>
 
-  <main class="main-inner">
+  <main class="main-container main-inner">
+    <div class="page-container">
     <header class="inner-header">
       <h1 class="inner-header-title">Каталог</h1>
       <ul class="breadcrumbs">
@@ -57,7 +58,7 @@
     </header>
 
     <section class="catalog-products">
-      <h1 class="visually-hidden">Список товаров с фильтрами</h1>
+      <h1 class="visually-hidden" hidden>Список товаров с фильтрами</h1>
       <form class="catalog-filter" method="get">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Производители</legend>
@@ -128,6 +129,7 @@
         <button class="button" type="submit">Показать</button>
       </form>
 
+      <div class="catalog-right-column">
       <div class="sorting-container">
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала популярные</option>
@@ -229,10 +231,12 @@
       </ul>
       <button class="button pagination-show-more" type="button">Показать ещё</button>
     </section>
-
+    </div>
+    </div>
   </main>
 
   <footer class="page-footer">
+    <div class="page-footer-container">
     <section class="footer-contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <img class="footer-contacts-logo" src="images/logo-short-dark.svg" alt="Логотип Барбершоп «Бородинский»"
@@ -277,6 +281,7 @@
         </li>
       </ul>
     </section>
+    </div>
   </footer>
 </body>
 

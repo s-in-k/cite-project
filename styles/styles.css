@@ -14,12 +14,24 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 16px;
     line-height: 24px;
     background-color: #fbf7f4;
     color:black;
+}
+
+.main-container {
+    flex-grow: 1;
 }
 
 .button {
@@ -56,10 +68,32 @@ body {
     line-height: 18px;
 }
 
+.navigation {
+    display: flex;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.navigation-list {
+    margin: 0;
+    padding: 0;
+    width: 430px;
+}
+
+.navigation-user {
+    max-width: 270px;
+    margin-left: auto;
+}
+
 .nav-link {
     text-decoration: none;
     color: #fff;
     background-color: #000;
+}
+
+.inner-logo {
+    width: 140px;
+    margin-right: 100px;
 }
 
 .main-index {
@@ -70,10 +104,28 @@ body {
     background-repeat: no-repeat;
 }
 
+.page-container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+}
+
 /* Advantages list*/
 
 .advantages-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
     text-align: center;
+}
+
+.advantages-item {
+    width: 277px;
 }
 
 .advantages-title {
@@ -89,12 +141,17 @@ body {
     background-color: #fbf7f4;
     color:#242424;
     background-image: url(../images/sprite.png);
+    margin: 0;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Services*/
 .services {
     text-transform: uppercase;
     font-weight: bold;
+    width: 390px;
 }
 
 .services-title{
@@ -106,12 +163,15 @@ body {
     font-size: 20px;
 }
 
-
 .services-price {
     color: #af7842;
 }
 
 /* Gallery*/
+.gallery {
+    width: 390px;
+}
+
 .gallery-title{
     font-size: 32px;
     line-height: 35px;
@@ -122,6 +182,7 @@ body {
 /* Contacts*/
 .contacts {
     font-weight: bold;
+    width: 352px;
 }
 
 .contacts-title {
@@ -152,6 +213,7 @@ body {
 .appointment {
     font-weight: bold;
     text-transform: uppercase;
+    width: 428px;
 }
 
 .appointment-title{
@@ -175,6 +237,23 @@ body {
 
 
 /* Main footer*/
+.page-footer-container {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    width: 940px;
+}
+
+.footer-contacts {
+    width: 187px;
+    margin-right: auto;
+}
+
+.footer-social {
+    margin-left: auto;
+    width: 184px;
+}
+
 .page-footer{
     background-image: url(../images/sprite.png);
     background-color: #242424;
@@ -232,13 +311,23 @@ body {
 }
 
 .catalog-products {
+    display: flex;
     font-weight: bold;
+}
+
+.catalog-filter {
+    width: 220px;
+    margin-right: 20px;
 }
 
 .catalog-filter-title {
     text-transform: uppercase;
     font-size: 20px;
     line-height: 28px;
+}
+
+.catalog-right-column {
+    width: 700px;
 }
 
 .sorting-container {
