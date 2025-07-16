@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    margin:0;
+    margin: 0;
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -27,7 +27,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     background-color: #fbf7f4;
-    color:black;
+    color: black;
 }
 
 .main-container {
@@ -43,20 +43,28 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     background-color: black;
-    color:#fbf7f4;
+    color: #fbf7f4;
 }
 
 .button-feedback,
-.button-light{
+.button-light {
     background-color: #fff;
     color: black;
 }
 
-/* 
-.visually-hidden{
-    display: none;  //hide extra text
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
-*/
 
 /* Page */
 
@@ -77,18 +85,30 @@ body {
 .navigation-list {
     margin: 0;
     padding: 0;
-    width: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: 470px;
 }
 
 .navigation-user {
     max-width: 270px;
     margin-left: auto;
+    justify-content: end;
 }
 
 .nav-link {
+    display: block;
+    padding: 24px 20px;
+
     text-decoration: none;
     color: #fff;
     background-color: #000;
+}
+
+.navigation-user .nav-link {
+    min-width: 16px;
+    min-height: 22px;
 }
 
 .inner-logo {
@@ -97,6 +117,9 @@ body {
 }
 
 .main-index {
+    padding-top: 64px;
+    padding-bottom: 60px;
+
     background-color: #000;
     color: #fff;
     background-image: url(../images/interior-photo.jpg);
@@ -116,12 +139,18 @@ body {
 
 /* Advantages list*/
 
+.advantages {
+    margin-top: 64px;
+    margin-bottom: 58px;
+}
+
 .advantages-list {
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: space-between;
     text-align: center;
+    list-style-type: none;
 }
 
 .advantages-item {
@@ -130,21 +159,35 @@ body {
 
 .advantages-title {
     text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 56px;
+    padding: 0;
+
     font-size: 32px;
     line-height: 35px;
     font-weight: bold;
+}
+
+.advantages-description {
+    margin: 0;
+    padding: 0;
 }
 
 /* Wraps*/
 
 .wrap-column {
     background-color: #fbf7f4;
-    color:#242424;
+    color: #242424;
     background-image: url(../images/sprite.png);
+    
     margin: 0;
-    padding: 0 40px;
+    padding: 40px;
     display: flex;
     justify-content: space-between;
+}
+
+.wrap-column:not(:last-child) {
+    margin-bottom: 32px;
 }
 
 /* Services*/
@@ -154,12 +197,19 @@ body {
     width: 390px;
 }
 
-.services-title{
+.services-title {
+    margin-top: 0;
+    margin-bottom: 28px;
+
     font-size: 32px;
     line-height: 35px;
 }
 
 .services-list {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    list-style-type: none;
     font-size: 20px;
 }
 
@@ -172,7 +222,10 @@ body {
     width: 390px;
 }
 
-.gallery-title{
+.gallery-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+
     font-size: 32px;
     line-height: 35px;
     font-weight: bold;
@@ -186,6 +239,9 @@ body {
 }
 
 .contacts-title {
+    margin-top: 0;
+    margin-bottom: 24px;
+
     font-size: 32px;
     line-height: 35px;
     text-transform: uppercase;
@@ -206,7 +262,7 @@ body {
     font-style: normal;
     font-size: 24px;
     line-height: 29px;
-    color:#242424;
+    color: #242424;
 }
 
 /* Appointment*/
@@ -216,7 +272,10 @@ body {
     width: 428px;
 }
 
-.appointment-title{
+.appointment-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+
     font-size: 32px;
     line-height: 35px;
 }
@@ -237,8 +296,14 @@ body {
 
 
 /* Main footer*/
+.page-footer {
+    background-image: url(../images/sprite.png);
+    background-color: #242424;
+    color: white;
+}
+
 .page-footer-container {
-    margin: 0 auto;
+    margin: 40px auto;
     padding: 0;
     display: flex;
     width: 940px;
@@ -254,20 +319,17 @@ body {
     width: 184px;
 }
 
-.page-footer{
-    background-image: url(../images/sprite.png);
-    background-color: #242424;
-    color: white;
-}
-
 .page-footer-title {
+    margin-top: 0;
+    margin-bottom: 14px;
+    
     font-size: 20px;
     font-weight: 700;
     line-height: 28px;
     text-transform: uppercase;
 }
 
-.about-text{
+.about-text {
     font-style: normal;
     font-size: 14px;
     font-weight: 700;
@@ -275,7 +337,7 @@ body {
     text-transform: none;
 }
 
-.footer-contacts-adress-phone{
+.footer-contacts-adress-phone {
     font-style: normal;
     font-size: 20px;
     font-weight: 700;
@@ -294,23 +356,57 @@ body {
     text-decoration: underline;
 }
 
+.footer-socials-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style-type: none;
+}
+
+.footer-socials-item {
+    background-color: #000;
+    width: 56px;
+    height: 44px;
+}
+
+
 .main-inner {
+    padding-top: 40px;
+    padding-bottom: 60px;
+
     background-color: #fbf7f4;
-    color:#242424;
+    color: #242424;
     background-image: url(../images/sprite.png);
 }
 
 .inner-header-title {
+    margin: 0;
+    margin-bottom: 16px;
+
     text-transform: uppercase;
     font-size: 32px;
     line-height: 35px;
 }
 
+.breadcrumbs {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
 .breadcrumbs-link {
     color: #242424;
+    margin-right: 32px;
 }
 
 .catalog-products {
+    margin: 0;
+    margin-top: 32px;
+
     display: flex;
     font-weight: bold;
 }
@@ -331,10 +427,20 @@ body {
 }
 
 .sorting-container {
+    display: flex;
+    box-sizing: border-box;
+    padding: 16px;
+    margin-bottom: 16px;
+
     background-color: #fff;
-    color:#242424;
+    color: #242424;
     width: 700px;
     height: 76px;
+}
+
+.sorting-container .button{
+    width: 56px;
+    height: 44px;
 }
 
 .select-control {
@@ -345,7 +451,13 @@ body {
     font-size: 16px;
     line-height: 24px;
     background-color: #fff;
-    color:#242424;
+    color: #242424;
+}
+
+.product-card-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .product-card-item {
@@ -360,10 +472,31 @@ body {
     font-size: 24px;
     line-height: 29px;
     text-transform: uppercase;
-    color:#814b18;
+    color: #814b18;
+}
+
+.pagination-container {
+    display: flex;
+    background-color: #fff;
+    margin-top: 24px;
+    padding: 16px;
+}
+
+.pagination {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 8px;
 }
 
 .pagination-link {
+    display: block;
+    box-sizing: border-box;
+    width: 50px;
+    height: 44px;
+    padding: 14px 20px;
+    
     font-weight: bold;
     font-size: 16px;
     line-height: 16px;
@@ -371,7 +504,7 @@ body {
     text-decoration: none;
     text-align: center;
     background-color: #000;
-    color:#fff;
+    color: #fff;
 }
 
 .pagination-current {
@@ -381,4 +514,8 @@ body {
 
 .pagination-disabled {
     background-color: #595959;
+}
+
+.pagination-show-more {
+    margin-left: auto;
 }
