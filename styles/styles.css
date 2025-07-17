@@ -118,7 +118,7 @@ body {
 
 .main-index {
     padding-top: 64px;
-    padding-bottom: 60px;
+    padding-bottom: 48px;
 
     background-color: #000;
     color: #fff;
@@ -130,12 +130,29 @@ body {
 .page-container {
     width: 940px;
     margin: 0 auto;
-    padding:0;
+    padding: 0;
 }
 
 .logo {
     display: block;
     margin: 0 auto;
+}
+
+/* Wraps*/
+
+.wrap-column {
+    background-color: #fbf7f4;
+    color: #242424;
+    background-image: url(../images/sprite.png);
+    
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrap-column:not(:last-child) {
+    margin-bottom: 32px;
 }
 
 /* Advantages list*/
@@ -172,23 +189,6 @@ body {
 .advantages-description {
     margin: 0;
     padding: 0;
-}
-
-/* Wraps*/
-
-.wrap-column {
-    background-color: #fbf7f4;
-    color: #242424;
-    background-image: url(../images/sprite.png);
-    
-    margin: 0;
-    padding: 40px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.wrap-column:not(:last-child) {
-    margin-bottom: 32px;
 }
 
 /* Services*/
@@ -266,6 +266,28 @@ body {
     color: #242424;
 }
 
+/* Сетка формы */
+.appointment-form {
+    display: grid;
+    grid-template-columns: 116px 74px 208px;
+    gap: 19px 16px;
+}
+
+.appointment-name {
+    grid-column: -1 / 1;
+}
+
+.appointment-submit {
+    grid-column: -1 / 1;
+    justify-self: start;
+}
+
+.field-group {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 /* Appointment*/
 .appointment {
     font-weight: bold;
@@ -298,30 +320,6 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
-}
-
-/* Сетка формы */
-.appointment-form {
-    width: 430px;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: 114px 74px 208px;
-    gap: 17px 19px;
-}
-
-.appointment-name {
-    grid-column: -1 / 1;
-}
-
-.appointment-submit {
-    grid-column: -1 / 1;
-    justify-self: start;
-}
-
-.field-group {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
 }
 
 /* Main footer*/
